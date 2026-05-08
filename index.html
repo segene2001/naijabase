@@ -663,7 +663,7 @@
   </p>
   <div class="hero-form">
     <input type="email" id="hero-email" placeholder="Enter your email address" />
-    <button class="btn-primary" onclick="openWaitlist()">Get Early Access</button>
+    <button class="btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeCXSkS1392wUGv8-K8Ua_96TyBXSDHmcTF7oDvLOOVTKK0Mg/viewform','_blank')">Get Early Access</button>
   </div>
   <p class="hero-note">No credit card required · Free tier available · NDPA compliant</p>
 
@@ -980,7 +980,7 @@
   <h2>Be first when we launch.</h2>
   <p>We're onboarding early users now. Join the waitlist and get 3 months of the Growth plan free.</p>
   <div style="display:flex; justify-content:center; margin-top:1rem;">
-    <button class="btn-primary" onclick="openWaitlist()" style="padding: 0.9rem 2.5rem; font-size:1rem;">Claim my spot →</button>
+    <button class="btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeCXSkS1392wUGv8-K8Ua_96TyBXSDHmcTF7oDvLOOVTKK0Mg/viewform','_blank')" style="padding: 0.9rem 2.5rem; font-size:1rem;">Claim my spot →</button>
   </div>
   <p style="margin-top:0.75rem; font-size:0.8rem; color:rgba(255,255,255,0.4);">Takes 30 seconds · No credit card needed</p>
 </div>
@@ -997,12 +997,6 @@
 </footer>
 
 <script>
-  const WAITLIST_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeCXSkS1392wUGv8-K8Ua_96TyBXSDHmcTF7oDvLOOVTKK0Mg/viewform?usp=pp_url';
-
-  function openWaitlist() {
-    window.open(WAITLIST_URL, '_blank');
-  }
-
   function switchTab(tab) {
     const devPlans = document.getElementById('plans-dev');
     const bizPlans = document.getElementById('plans-biz');
